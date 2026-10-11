@@ -1,12 +1,12 @@
 import { formatarMoeda } from "../utils/formatar";
 
 function Resumo({ transacoes }) {
-  // Soma só as receitas
+
   const receitas = transacoes
     .filter((t) => t.tipo === "receita")
     .reduce((total, t) => total + t.valor, 0);
 
-  // Soma só as despesas
+
   const despesas = transacoes
     .filter((t) => t.tipo === "despesa")
     .reduce((total, t) => total + t.valor, 0);

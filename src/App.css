@@ -4,7 +4,7 @@
   padding: 32px 16px 64px;
 }
 
-/* ---------- Topo ---------- */
+
 .topo {
   text-align: center;
   margin-bottom: 28px;
@@ -19,7 +19,7 @@
   margin-top: 4px;
 }
 
-/* ---------- Cartões de resumo ---------- */
+
 .resumo {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -50,7 +50,7 @@
 .cartao.receita { border-top-color: var(--verde); }
 .cartao.despesa { border-top-color: var(--vermelho); }
 
-/* ---------- Formulário ---------- */
+
 .formulario,
 .lista {
   background: var(--branco);
@@ -97,7 +97,7 @@ select {
   transition: border-color 0.2s, box-shadow 0.2s;
 }
 
-/* Destaque quando o campo está selecionado */
+
 input:focus,
 select:focus {
   border-color: var(--roxo);
@@ -109,7 +109,7 @@ select:focus {
   padding: 13px;
   border: none;
   border-radius: 10px;
-  background: var(--roxo);
+  background: var(--verde);
   color: white;
   font-size: 1rem;
   font-weight: 600;
@@ -117,10 +117,10 @@ select:focus {
   transition: transform 0.1s, background 0.2s;
 }
 
-.botao:hover { background: #4f46e5; }
+.botao:hover { background: #23a65a; }
 .botao:active { transform: scale(0.98); }
 
-/* ---------- Calendário ---------- */
+
 .react-datepicker-wrapper {
   width: 100%;
 }
@@ -159,7 +159,7 @@ select:focus {
   border-radius: 50%;
 }
 
-/* ---------- Lista ---------- */
+
 .lista ul {
   list-style: none;
 }
@@ -214,7 +214,7 @@ select:focus {
 
 .remover:hover { background: #fecaca; }
 
-/* ---------- Celular ---------- */
+
 @media (max-width: 600px) {
   .resumo { grid-template-columns: 1fr; }
   .linha { flex-direction: column; gap: 0; }

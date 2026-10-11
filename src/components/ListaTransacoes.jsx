@@ -1,7 +1,7 @@
 import { formatarMoeda, formatarData } from "../utils/formatar";
 
 function ListaTransacoes({ transacoes, aoRemover }) {
-  // Se não tem nada ainda, mostra uma mensagem amigável
+
   if (transacoes.length === 0) {
     return (
       <section className="lista">

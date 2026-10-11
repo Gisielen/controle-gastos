@@ -3,11 +3,11 @@ import DatePicker, { registerLocale } from "react-datepicker";
 import { ptBR } from "date-fns/locale";
 import "react-datepicker/dist/react-datepicker.css";
 
-// Ensina o calendário a falar português
+
 registerLocale("pt-BR", ptBR);
 
 function Formulario({ aoAdicionar }) {
-  // Um estado para cada campo do formulário
+
 const [descricao, setDescricao] = useState("");
 const [valor, setValor] = useState("");
 const [tipo, setTipo] = useState("despesa");
@@ -15,18 +15,18 @@ const [categoria, setCategoria] = useState("Alimentação");
 const [data, setData] = useState(new Date());
 
 function enviar(evento) {
-    // Impede a página de recarregar (comportamento padrão do formulário)
+
     evento.preventDefault();
 
-    // Validação: não deixa enviar campos vazios ou valor inválido
+
     if (descricao.trim() === "" || Number(valor) <= 0) {
         alert("Preencha a descrição e um valor maior que zero.");
         return;
     }
 
-    // Monta o objeto da transação
+
     const novaTransacao = {
-      id: Date.now(), // número único baseado na hora atual
+        id: Date.now(), 
         descricao: descricao.trim(),
         valor: Number(valor),
         tipo: tipo,
@@ -34,10 +34,9 @@ function enviar(evento) {
         data: data.toISOString(),
     };
 
-    // Envia para o App, que guarda na lista
+
     aoAdicionar(novaTransacao);
 
-    // Limpa o formulário
     setDescricao("");
     setValor("");
     setData(new Date());

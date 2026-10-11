@@ -1,16 +1,16 @@
-/* Variáveis: definimos as cores uma vez e usamos em todo lugar */
+
 :root {
-  --fundo: #f4f6fb;
+  --fundo: #368530e4;
   --branco: #ffffff;
-  --texto: #1f2937;
-  --texto-suave: #6b7280;
+  --texto: #070708;
+  --texto-suave: #2a2b2e;
   --borda: #e5e7eb;
-  --roxo: #6366f1;
-  --verde: #10b981;
-  --vermelho: #ef4444;
+  --roxo: #1a1ca6;
+  --verde: #055339;
+  --vermelho: #8c1010;
 }
 
-/* Reset: remove espaçamentos padrão do navegador */
+
 * {
   margin: 0;
   padding: 0;
